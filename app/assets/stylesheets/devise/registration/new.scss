@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+
+.sign-up-main{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+}
+
+.title{
+    text-align: center;
+    color: #666059;
+}
+.sign-up-contents{
+    padding: 1.2vh 30vw;;
+    background-color: #ffffff;
+}
+
+.registration-field{
+    margin-top: 5px;
+    font-weight: 450;
+    color: #666059;
+}
+
+.name-box{
+    width: 100%;
+    border: solid 1px silver;
+}
+
+.select-box-r{
+    border: solid 1px silver;
+}
+
+.postal-code{
+    width: 30% ;
+    border: solid 1px silver;
+}
+
+.text-box-r{
+    width: 70%;
+    border: solid 1px silver;
+}
+
+.sign-up-actions{
+    margin: 8px 0px;
+    text-align: center;
+}
+.sign-up-btn{
+    width: 130px;
+    border: none;
+    background-color: #666059;
+    color: #ffffff;
+}
+
+.top-icon{
+    width: 90px;
+    height: 100px;
+}
+
+.top-link{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+// エラーメッセージの設定
+
+.error_explanation{
+    display: flex;
+    justify-content: center;
+}
+
+.error-message{
+    color: #db7c00;
+}
+
+.error-lists{
+    text-align: left;
+    list-style: square;
+}
