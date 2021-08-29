@@ -1,4 +1,5 @@
 class DogsController < ApplicationController
+    before_action :search_dog, only: [:index, :search]
     before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
     before_action :set_dog, only: [:show, :edit, :update, :destroy]
 
@@ -17,6 +18,10 @@ class DogsController < ApplicationController
         else
             render :new
         end
+    end
+
+    def search
+        @results = @q.result
     end
 
     def show
@@ -38,6 +43,10 @@ class DogsController < ApplicationController
     end
 
     private
+
+    def search_dog
+        @q = Dog.ransack(params[:q])
+    end
     
     def dog_params
         params.require(:dog).permit(:image, :name, :year_id, :m_or_f_id, :size_id, :dog_breed_id, :date, :description).merge(user_id: current_user.id)
