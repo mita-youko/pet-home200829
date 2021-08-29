@@ -1,5 +1,6 @@
 class DogsController < ApplicationController
-    before_action :set_dog, only: [:show, :edit, :update]
+    before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+    before_action :set_dog, only: [:show, :edit, :update, :destroy]
 
     def index
         @dogs = Dog.all.order(date: :asc)
@@ -32,6 +33,10 @@ class DogsController < ApplicationController
         end
     end
 
+    def destroy
+        redirect_to dogs_path if @dog.destroy
+    end
+
     private
     
     def dog_params
@@ -41,4 +46,6 @@ class DogsController < ApplicationController
     def set_dog
         @dog = Dog.find(params[:id])
     end
+
+
 end
