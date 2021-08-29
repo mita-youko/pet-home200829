@@ -1,0 +1,68 @@
+<%= render "shared/header" %>
+
+<div class="index-dog-page">
+
+  <div class="left">
+    <div class="left-content"><%=link_to '新規投稿する', new_cat_path, class: "dog-btn" %></div>
+
+    <div class="search-form">
+      <%= search_form_for @q, url: search_cats_path, method: :get, local: true do |form| %>
+       <ul class="search-lists">
+        <li class="search-list">   
+          年齢
+        </li> 
+        <li class="search-list">  
+          <%= form.collection_select :year_id_eq, Year.where.not(id: 1), :id, :name, include_blank: '指定なし' %>
+        </li> 
+        <li class="search-list">  
+          性別
+        </li> 
+        <li class="search-list"> 
+          <%= form.collection_select :m_or_f_id_eq, MOrF.where.not(id: 1), :id, :name, include_blank: '指定なし' %>
+        </li>
+        <li class="search-list">  
+          種類
+        </li> 
+        <li class="search-list">
+          <%= form.collection_select :cat_breed_id_eq, CatBreed.where.not(id: 1), :id, :name, include_blank: '指定なし' %>
+        </li class="left-list">
+        <li class="search-btn">  
+          <%= form.submit '検索する', name: nil, class:"search-box" %>
+        </li>
+       </ul>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="right">
+   <%# 検索結果の表示 %>
+   <div class="right-content">
+   <% if @results.length !=0 %>
+
+    <% @results.each do |result| %>
+     <%# <% if result.cat_record.blank? %> 
+     <div class="dog-info">
+       <%= link_to cat_path(result.id),class:"show-link" do %>
+        <%= image_tag result.image, class:"dog-image" %>
+        <div class="dog-name-box"><h2 class="dog-name"><%= result.name %></h2></div>
+        <div>
+          <ul class="info-lists">
+           <li class="info">年齢： <%= result.year.name %></li>
+           <li class="info">性別： <%= result.m_or_f.name %></li>
+           <li class="info">種類： <%= result.cat_breed.name %></li>
+           <li class="info-date">募集期限： <%= result.date %></li>
+          </ul>
+        </div>
+        <% end %>
+     </div>
+     <%# <% end %> 
+    <% end %>
+   <% else %>
+     <h3>検索条件にマッチする動物がいません。</h3>
+   <% end %>
+   </div>
+   <%# /検索結果の表示 %>
+  </div>
+
+</div>

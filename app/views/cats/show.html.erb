@@ -1,0 +1,52 @@
+<%= render "shared/header" %>
+
+<div class="show-dog-page">
+ <div class="main-content">
+   <div class="show-left">
+     <div class="image-box"><%= image_tag @cat.image, class:"show-image" %></div>
+     <h2><%= @cat.name %></h2>
+
+     <%# <% if @cat.cat_record.present? %> 
+      <%# <div class="decided">里親決定済み</div> %>
+     <%# end %>
+
+     <div class="show-btns">
+      <ul class="btns">
+      <% if user_signed_in? %>
+       <% if current_user.id != @cat.user.id %>
+        <li class="show-form">里親申請のお問い合わせはこちらまで！</li>
+        <li class="show-forms">TEL：<%= @cat.user.phone_number %></li>
+        <li class="show-forms">Email：<%= @cat.user.email %></li>
+       <% end %>
+       
+       <%# <% if current_user.id == @cat.user.id && @cat.cat_record.blank? %> 
+        <li class="show-btn-decide"><%= link_to "里親が決定した", '#', class:"decide"%></li>
+        <li class="show-btn"><%= link_to "編集する", edit_cat_path(@cat.id), class:"edit"%></li>
+        <li class="show-btn"><%= link_to "削除する", cat_path(@cat.id), method: :delete, class:"delete"%></li>
+       <%# <% end %> 
+      <% end %>
+      <% unless user_signed_in? %>
+        <li class="show-forms">里親申請する場合は、新規登録・ログインが必要です</li>
+      <% end %>
+        <li class="index-btn"><%= link_to "一覧ページへ戻る", cats_path, class:"index-link"%></li>
+      </ul>
+     </div>
+   </div>
+
+   <div class="show-rights">
+     <div class="show-right">
+       <div class="show-box">年齢: <%= @cat.year.name %></div>
+       <div  class="show-box">性別: <%= @cat.m_or_f.name %></div>
+     </div>
+     <div class="show-right">
+       <div class="show-box">種類: <%= @cat.cat_breed.name %></div>
+       <div class="show-box">募集者： <%= @cat.user.nickname %></div>
+     </div>
+     <div class="show-right">
+       <div class="show-date">募集期限: <%= @cat.date %></div>
+     </div>
+     <div class="show-descriiption">詳細情報：<p><%= @cat.description %></p></div>
+   </div>
+ </div>
+
+</div>
