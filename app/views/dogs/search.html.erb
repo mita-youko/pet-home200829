@@ -4,7 +4,8 @@
 
   <div class="left">
     <div class="left-content"><%=link_to '新規投稿する', new_dog_path, class: "dog-btn" %></div>
-      <div class="search-form">
+
+    <div class="search-form">
       <%= search_form_for @q, url: search_dogs_path, method: :get, local: true do |form| %>
        <ul class="search-lists">
         <li class="search-list">   
@@ -36,34 +37,39 @@
         </li>
        </ul>
       <% end %>
-      </div>
+    </div>
   </div>
 
 
   <div class="right">
-   <%# 投稿内容の表示 %>
+   <%# 検索結果の表示 %>
    <div class="right-content">
-    <% @dogs.each do |dog| %>
-     <%# <% if dog.dog_record.blank? %> 
+   <% if @results.length !=0 %>
+
+    <% @results.each do |result| %>
+     <%# <% if result.dog_record.blank? %> 
      <div class="dog-info">
-       <%= link_to dog_path(dog.id),class:"show-link" do %>
-        <%= image_tag dog.image, class:"dog-image" %>
-        <div class="dog-name-box"><h2 class="dog-name"><%= dog.name %></h2></div>
+       <%= link_to dog_path(result.id),class:"show-link" do %>
+        <%= image_tag result.image, class:"dog-image" %>
+        <div class="dog-name-box"><h2 class="dog-name"><%= result.name %></h2></div>
         <div>
           <ul class="info-lists">
-           <li class="info">年齢： <%= dog.year.name %></li>
-           <li class="info">性別： <%= dog.m_or_f.name %></li>
-           <li class="info">サイズ： <%= dog.size.name %></li>
-           <li class="info">種類： <%= dog.dog_breed.name %></li>
-           <li class="info-date">募集期限： <%= dog.date %></li>
+           <li class="info">年齢： <%= result.year.name %></li>
+           <li class="info">性別： <%= result.m_or_f.name %></li>
+           <li class="info">サイズ： <%= result.size.name %></li>
+           <li class="info">種類： <%= result.dog_breed.name %></li>
+           <li class="info-date">募集期限： <%= result.date %></li>
           </ul>
         </div>
         <% end %>
      </div>
      <%# <% end %> 
     <% end %>
+   <% else %>
+     <h3>検索条件にマッチする動物がいません。</h3>
+   <% end %>
    </div>
-   <%# /投稿内容の表示 %>
+   <%# /検索結果の表示 %>
   </div>
 
 </div>
