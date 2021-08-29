@@ -1,5 +1,5 @@
 class DogsController < ApplicationController
-    before_action :set_dog, only: [:show]
+    before_action :set_dog, only: [:show, :edit, :update]
 
     def index
         @dogs = Dog.all.order(date: :asc)
@@ -19,7 +19,17 @@ class DogsController < ApplicationController
     end
 
     def show
-        
+    end
+
+    def edit
+    end
+
+    def update
+        if @dog.update(dog_params)
+            redirect_to dog_path
+        else
+            render :edit
+        end
     end
 
     private
