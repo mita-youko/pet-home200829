@@ -1,0 +1,115 @@
+.index-dog-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.left{
+    width: 20%;
+    height: 100vh;
+    background-color: #dcd0c0;
+    padding: 20px 10px;
+}
+
+.left-content{
+    text-align: center;
+}
+
+.dog-btn{
+    padding: 7px 9px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #666059 ;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+}
+
+.search-lists{
+    list-style: none;
+    margin-top: 40px;
+}
+
+.search-list {
+    width: 100%;    
+}
+
+.search-btn{
+    margin-top: 10px;
+    text-align: center;
+    color: #666059;
+}
+
+.search-box{
+    width: 70px;
+    height: 30px;
+    border: none;
+    background-color: #666059 ;
+    color: #ffffff;
+}
+
+.right{
+    width: 80%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.right-content{
+    height: 100vh;
+    padding: 30px 30px;
+    border: solid 5px #666059;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dog-info{
+    width: 17vw;
+    height: 25vh;
+    text-align: center;
+}
+
+.show-link{
+    text-decoration: none;
+    color: #332c22 ;
+}
+
+.dog-name-box{
+    text-align: center;
+}
+
+.dog-image{
+    width: 15vw;
+    width: 15vh;
+}
+
+.info{
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+}
+
+.info-date{
+    font-size: 12px;
+    list-style: none;
+    text-align: left;
+    color: #db7c00;
+}
+
+//左詰にするための記述
+.right-content::before{
+    content:"";
+    display: block;
+    width:17vw;
+    height: 0;
+    order:1;
+}
+.right-content::after{
+    content:"";
+    display: block;
+    width:17vw;
+}

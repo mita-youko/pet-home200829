@@ -1,0 +1,65 @@
+<%= render "shared/header" %>
+
+<div class="new-dogs-main">
+ <div class="dogs-main">
+  <h2 class="new-info">情報を入力してください</h2>
+  <%= form_with model: @dog, url: dogs_path, local: true do |f| %>
+
+  <%# 画像%>
+  <div class="font">
+   画像
+   </div>
+   <div class="text-box">
+   <%= f.file_field :image %>
+  </div>
+  <%# /画像%>
+  <%# 名前と詳細情報 %>
+  <div class="font">
+   名前
+  </div>
+  <div class="text-box">
+   <%= f.text_area :name, class:"animal-text", placeholder:"犬の名前（必須 40文字まで)", maxlength:"40"%> 
+  </div>
+  <div class="font">
+   年齢
+  </div>
+  <div class="text-box">
+   <%= f.collection_select(:year_id, Year.all, :id, :name, {}, {class:"animal-year", id:"year"})%>
+  </div>
+  <div class="font">
+   性別
+  </div>
+  <div class="text-box">
+   <%= f.collection_select(:m_or_f_id, MOrF.all, :id, :name, {}, {class:"animal-mf", id:"m_or_f"}) %>
+  </div>
+  <div class="font">
+   サイズ
+  </div>
+  <div class="text-box">
+   <%= f.collection_select(:size_id, Size.all, :id, :name, {}, {class:"animal-size", id:"size"}) %>
+  </div>
+  <div class="font">
+   種類
+  </div>
+  <div class="text-box">
+   <%= f.collection_select(:dog_breed_id, DogBreed.all, :id, :name, {}, {class:"animal-breed", id:"dog-breed"}) %>
+  </div>
+  <div class="font">
+   募集期限
+  </div>
+  <div class="text-box">
+   <%= f.date_select :date, class:"animal-date", use_month_numbers: true, start_year: Time.now.year, end_year: (Time.now.year + 5)%>
+  </div>
+  <div class="font">
+   詳細：健康状態（病気やケガ）、詳細な年齢、性格、譲渡の条件、注意すべき点など
+  </div>
+  <div class="text-box"> 
+   <%= f.text_area :description, class:"animal-description", placeholder:"例）①フィラリア陽性なのですが、元気いっぱいです。 ②４歳くらいです。人懐こい性格なので・・・③高齢者不可、単身者不可"%>
+  </div>
+  <%# /名前と詳細情報 %>
+  <div class="btn-font">
+   <%= f.submit "投稿する" ,class:"upload-btn" %>
+  </div>
+  <% end %>
+ </div>
+</div>

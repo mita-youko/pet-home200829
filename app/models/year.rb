@@ -9,4 +9,7 @@ class Year < ActiveHash::Base
       { id: 7, name: '21歳〜25歳'}
     ]
 
+    include ActiveHash::Associations
+    has_many :dogs
+
 end

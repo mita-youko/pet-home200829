@@ -1,0 +1,58 @@
+.new-dogs-main{
+    width: 100vw;
+    height: 100vh;
+    padding: 3% 15%;
+}
+
+.dogs-main{
+    padding: 1.2vh 15vw;
+    height: 100%;
+    background-color: #dcd0c0;
+    color: #666059;
+}
+
+.new-info{
+    text-align: center;
+}
+
+.font{
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.text-box{
+    margin-bottom: 1.5%;
+}
+
+.animal-text{
+    width: 100%;
+    border: solid 2px #ccc1b1;
+}
+
+.animal-year,.animal-mf,.animal-size,.animal-breed,.animal-date{
+    border: solid 2px #ccc1b1;
+}
+
+.animal-date{
+    color: linen;
+}
+
+.animal-description{
+    width: 100%;
+    height: 15vh;
+    border: solid 2px #ccc1b1;
+}
+
+.btn-font{
+    text-align: center;
+}
+
+.upload-btn{
+    width: 100px;
+    height: 38px;
+    font-size: 15px;
+    text-align: center;
+    background-color: #666059;
+    color: #ffffff;
+    border: none;
+}
