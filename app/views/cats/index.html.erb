@@ -1,0 +1,37 @@
+<%= render "shared/header" %>
+
+<div class="index-dog-page">
+
+  <div class="left">
+    <div class="left-content"><%=link_to '新規投稿する', new_cat_path, class: "dog-btn" %></div>
+      
+    
+  </div>
+
+
+  <div class="right">
+   <%# 投稿内容の表示 %>
+   <div class="right-content">
+    <% @cats.each do |cat| %>
+     <%# <% if dog.dog_record.blank? %> 
+     <div class="dog-info">
+       <%# <%= link_to cat_path(cat.id),class:"show-link" do %> 
+        <%= image_tag cat.image, class:"dog-image" %>
+        <div class="dog-name-box"><h2 class="dog-name"><%= cat.name %></h2></div>
+        <div>
+          <ul class="info-lists">
+           <li class="info">年齢： <%= cat.year.name %></li>
+           <li class="info">性別： <%= cat.m_or_f.name %></li>
+           <li class="info">種類： <%= cat.cat_breed.name %></li>
+           <li class="info-date">募集期限： <%= cat.date %></li>
+          </ul>
+        </div>
+        <%# <% end %> 
+     </div>
+     <%# <% end %> 
+    <% end %>
+   </div>
+   <%# /投稿内容の表示 %>
+  </div>
+
+</div>

@@ -1,5 +1,5 @@
 class CatsController < ApplicationController
-    ef index
+    def index
         @cats = Cat.all.order(date: :asc)
     end
 
@@ -14,5 +14,11 @@ class CatsController < ApplicationController
         else
            render :new 
         end
+    end
+
+    private
+
+    def cat_params
+        params.require(:cat).permit(:image, :name, :year_id, :m_or_f_id, :cat_breed_id, :date, :description).merge(user_id: current_user.id)
     end
 end
