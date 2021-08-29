@@ -4,7 +4,8 @@
 
   <div class="left">
     <div class="left-content"><%=link_to '新規投稿する', new_cat_path, class: "dog-btn" %></div>
-      <div class="search-form">
+
+    <div class="search-form">
       <%= search_form_for @q, url: search_cats_path, method: :get, local: true do |form| %>
        <ul class="search-lists">
         <li class="search-list">   
@@ -30,33 +31,38 @@
         </li>
        </ul>
       <% end %>
-    </div>    
+    </div>
   </div>
 
 
   <div class="right">
-   <%# 投稿内容の表示 %>
+   <%# 検索結果の表示 %>
    <div class="right-content">
-    <% @cats.each do |cat| %>
-     <%# <% if dog.dog_record.blank? %> 
+   <% if @results.length !=0 %>
+
+    <% @results.each do |result| %>
+     <%# <% if result.cat_record.blank? %> 
      <div class="dog-info">
-       <%= link_to cat_path(cat.id),class:"show-link" do %> 
-        <%= image_tag cat.image, class:"dog-image" %>
-        <div class="dog-name-box"><h2 class="dog-name"><%= cat.name %></h2></div>
+       <%= link_to cat_path(result.id),class:"show-link" do %>
+        <%= image_tag result.image, class:"dog-image" %>
+        <div class="dog-name-box"><h2 class="dog-name"><%= result.name %></h2></div>
         <div>
           <ul class="info-lists">
-           <li class="info">年齢： <%= cat.year.name %></li>
-           <li class="info">性別： <%= cat.m_or_f.name %></li>
-           <li class="info">種類： <%= cat.cat_breed.name %></li>
-           <li class="info-date">募集期限： <%= cat.date %></li>
+           <li class="info">年齢： <%= result.year.name %></li>
+           <li class="info">性別： <%= result.m_or_f.name %></li>
+           <li class="info">種類： <%= result.cat_breed.name %></li>
+           <li class="info-date">募集期限： <%= result.date %></li>
           </ul>
         </div>
         <% end %>
      </div>
      <%# <% end %> 
     <% end %>
+   <% else %>
+     <h3>検索条件にマッチする動物がいません。</h3>
+   <% end %>
    </div>
-   <%# /投稿内容の表示 %>
+   <%# /検索結果の表示 %>
   </div>
 
 </div>
