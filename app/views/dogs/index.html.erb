@@ -13,9 +13,9 @@
    <%# 投稿内容の表示 %>
    <div class="right-content">
     <% @dogs.each do |dog| %>
-     <% if dog.dog_record.blank? %>
+     <%# <% if dog.dog_record.blank? %> 
      <div class="dog-info">
-       <%= link_to dog_path(dog.id),class:"show-link" do %>
+       <%# <%= link_to dog_path(dog.id),class:"show-link" do %> 
         <%= image_tag dog.image, class:"dog-image" %>
         <div class="dog-name-box"><h2 class="dog-name"><%= dog.name %></h2></div>
         <div>
@@ -27,9 +27,9 @@
            <li class="info-date">募集期限： <%= dog.date %></li>
           </ul>
         </div>
-        <% end %>
+        <%# <% end %> 
      </div>
-     <% end %>
+     <%# <% end %> 
     <% end %>
    </div>
    <%# /投稿内容の表示 %>
