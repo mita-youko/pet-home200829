@@ -1,0 +1,156 @@
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-contents{
+    width: 100%;
+    background-image: image-url('top.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.thema{
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 10px;
+    text-shadow: 3px 5px 2px gray;
+    margin: 22px 0 0 15px;
+}
+
+.right-contents{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.boxes{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8{
+    width: 50%;
+    text-align: center;
+    padding-top: 9%;
+    position: relative;
+}
+
+.box1{
+    background-color: #c0b283;
+}
+
+.box1:hover .heart{
+    opacity: 1;
+}
+
+.heart{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-image: image-url('heart-small.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    margin: auto;
+    opacity: 0;
+}
+
+.box2{
+    background-image: image-url('inu04.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.box3{
+    background-image: image-url('cat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.box4{
+    background-color: #dcd0c0;
+}
+
+.box4:hover .heart{
+    opacity: 1;
+}
+
+.box5{
+    background-color: #f4f4f4;
+}
+
+.box5:hover .heart{
+    opacity: 1;
+}
+
+.box6{
+    background-image: image-url('volunteer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.box7{
+    background-image: image-url('earth.png');
+    background-size: cover;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.box8{
+    background-color: #373737;
+}
+
+.box8:hover .star{
+    opacity: 1;
+}
+
+.star{
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    background-image: image-url('kirakira01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 42%;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.btn-dog,.btn-cat{
+    font-size: 28px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-staff,.btn-you{
+    font-size: 28px;
+    text-decoration: none;
+    color: silver;
+}
+
+.english-dog,.english-cat{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.english-staff,.english-you{
+    font-size: 20px;
+    color: silver;
+}
+
+
