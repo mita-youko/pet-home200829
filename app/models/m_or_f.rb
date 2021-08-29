@@ -1,4 +1,4 @@
-class MaleFemale < ActiveHash::Base
+class MOrF < ActiveHash::Base
     self.data = [
       { id: 1, name: '--' },
       { id: 2, name: 'オス' },
