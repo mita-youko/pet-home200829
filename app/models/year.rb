@@ -11,5 +11,6 @@ class Year < ActiveHash::Base
 
     include ActiveHash::Associations
     has_many :dogs
+    has_many :cats
 
 end
