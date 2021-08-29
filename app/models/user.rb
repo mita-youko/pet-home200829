@@ -16,4 +16,6 @@ class User < ApplicationRecord
        validates :member_type_id
     end
   end
+
+  has_many :dogs
 end
