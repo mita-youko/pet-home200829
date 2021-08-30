@@ -19,8 +19,8 @@ https://pet-home200829.herokuapp.com/
 
 # DEMO
 
-### トップページ画面
-![demo](https://gyazo.com/04f0b3f6bba553ea26a19f8eb50cf3fe/raw)
+### トップページ
+![demo](https://gyazo.com/b871cbcbdf2eb3856b7ec89dc7240bab/raw)
 
 ### 新規登録画面
 ![demo](https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e/raw)
