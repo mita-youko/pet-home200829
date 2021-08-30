@@ -9,6 +9,7 @@ pet-home200829
 
 # 本番環境
 https://pet-home200829.herokuapp.com/
+-ログインアカウント メールアドレス:yamada@y, パスワード:yyy111
 
 # 制作背景（意図）
 このアプリを作ろうと思った理由は、殺処分ゼロに貢献できる活動をしたいと考えているからです。
@@ -19,24 +20,24 @@ https://pet-home200829.herokuapp.com/
 # DEMO
 
 ### トップページ
-https://gyazo.com/04f0b3f6bba553ea26a19f8eb50cf3fe
+![demo](https://gyazo.com/04f0b3f6bba553ea26a19f8eb50cf3fe)
 
 ### 新規登録画面
-https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e
+![demo](https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e)
 
 ### 犬一覧ページ（検索結果ページ）
-https://gyazo.com/c37e94270c7459eda87925132fe51ea5
+![demo](https://gyazo.com/c37e94270c7459eda87925132fe51ea5)
 
 
 ### 詳細ページ
-https://gyazo.com/de2d806f8603b2b53fb376ead4a2512c
+![demo](https://gyazo.com/de2d806f8603b2b53fb376ead4a2512c)
 
 ### 編集ページ
-https://gyazo.com/650f5eb62679a62fb13de7eb31bcacb9
+![demo](https://gyazo.com/650f5eb62679a62fb13de7eb31bcacb9)
 
 ### 里親決定済ページ
-https://gyazo.com/3d7e052fc5fa5b50775464415957e864
-https://gyazo.com/2280728b9340543e62e2d09e1bd0babb
+![demo](https://gyazo.com/3d7e052fc5fa5b50775464415957e864)
+![demo](https://gyazo.com/2280728b9340543e62e2d09e1bd0babb)
 
 # 工夫したポイント
 - ビューのレイアウト
