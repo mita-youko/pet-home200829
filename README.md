@@ -20,7 +20,8 @@ https://pet-home200829.herokuapp.com/
 # DEMO
 
 ### トップページ
-![top](https://gyazo.com/76f7f925e289afe0f45a4143b71c988f/raw)
+- データが大きすぎるせいか、READMEに載らないので一時的にURLを貼っています。
+https://gyazo.com/b871cbcbdf2eb3856b7ec89dc7240bab
 
 ### 新規登録画面
 ![user](https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e/raw)
