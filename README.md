@@ -20,24 +20,24 @@ https://pet-home200829.herokuapp.com/
 # DEMO
 
 ### トップページ
-![top](https://gyazo.com/b871cbcbdf2eb3856b7ec89dc7240bab/raw)
+- ![top](https://gyazo.com/b871cbcbdf2eb3856b7ec89dc7240bab/raw)
 
 ### 新規登録画面
-![user](https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e/raw)
+- ![user](https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e/raw)
 
 ### 犬一覧ページ（検索結果ページ）
-![dogs](https://gyazo.com/c37e94270c7459eda87925132fe51ea5/raw)
+- ![dogs](https://gyazo.com/c37e94270c7459eda87925132fe51ea5/raw)
 
 
 ### 詳細ページ
-![detail](https://gyazo.com/de2d806f8603b2b53fb376ead4a2512c/raw)
+- ![detail](https://gyazo.com/de2d806f8603b2b53fb376ead4a2512c/raw)
 
 ### 編集ページ
-![edit](https://gyazo.com/650f5eb62679a62fb13de7eb31bcacb9/raw)
+- ![edit](https://gyazo.com/650f5eb62679a62fb13de7eb31bcacb9/raw)
 
 ### 里親決定済ページ
-![decide](https://gyazo.com/3d7e052fc5fa5b50775464415957e864/raw)
-![decided](https://gyazo.com/2280728b9340543e62e2d09e1bd0babb/raw)
+- ![decide](https://gyazo.com/3d7e052fc5fa5b50775464415957e864/raw)
+- ![decided](https://gyazo.com/2280728b9340543e62e2d09e1bd0babb/raw)
 
 # 工夫したポイント
 - ビューのレイアウト
