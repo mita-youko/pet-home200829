@@ -6,9 +6,9 @@
      <div class="image-box"><%= image_tag @dog.image, class:"show-image" %></div>
      <h2><%= @dog.name %></h2>
    
-     <%# <% if @dog.dog_record.present? %>
-      <%# <div class="decided">里親決定済み</div> %>
-     <%# <% end %> 
+     <% if @dog.dog_record.present? %>
+      <div class="decided">里親決定済み</div>
+     <% end %>
 
      <div class="show-btns">
       <ul class="btns">
@@ -19,11 +19,11 @@
         <li class="show-forms">Email：<%= @dog.user.email %></li>
        <% end %>
 
-       <%# <% if current_user.id == @dog.user.id && @dog.dog_record.blank? %>
-        <li class="show-btn-decide"><%= link_to "里親が決定した", "#", class:"decide"%></li>
+       <% if current_user.id == @dog.user.id && @dog.dog_record.blank? %>
+        <li class="show-btn-decide"><%= link_to "里親が決定した", dog_dog_records_path(@dog.id), class:"decide"%></li>
         <li class="show-btn"><%= link_to "編集する", edit_dog_path(@dog.id), class:"edit"%></li>
         <li class="show-btn"><%= link_to "削除する", dog_path(@dog.id), method: :delete, class:"delete"%></li>
-       <%# <% end %> 
+       <% end %>
       <% end %>
       <% unless user_signed_in? %>
         <li class="show-forms">里親申請には、新規登録・ログインが必要です</li>
