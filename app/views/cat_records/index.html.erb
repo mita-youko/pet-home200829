@@ -1,0 +1,39 @@
+<%= render "shared/header" %>
+
+<div class="record-main">
+  <div class="record-contents">
+    <div class="record-info">
+      <%= form_with model: @cat_record, url: cat_cat_records_path, local: true do |f| %>
+       <div class="record-font">
+        譲渡人名
+       </div>
+       <div class="record-box">
+        <%= f.text_area :parent_name, class:"record-text", placeholder: "例) 譲渡花子", maxlength:"40"%>
+       </div>
+       <div class="record-font">
+        譲受人名
+       </div>
+       <div class="record-box">
+        <%= f.text_area :new_parent_name, class:"record-text", placeholder: "例) 受取太郎", maxlength:"40"%>
+       </div>
+       <div class="record-font">
+        譲受人名
+       </div>
+       <div class="record-box">
+        <%= f.text_field :phone_number, class:"record-text", placeholder: "例）09012345678"%>
+       </div>
+       <div class="check">
+        <%= f.check_box :checkbox, {}, checked_value = "true", unchecked_value = "false" %>
+        譲渡誓約書を交わしました
+       </div>
+       <div class="attention">
+        ※譲渡誓約書を取り交わさないペットの譲渡は動物虐待です※
+       </div>
+       <div class="record-btn">
+        <%= f.submit "決定" ,class:"contract-btn" %>
+       </div>
+  
+      <% end %>
+    </div>
+  </div>
+</div>
