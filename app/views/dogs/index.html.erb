@@ -44,7 +44,7 @@
    <%# 投稿内容の表示 %>
    <div class="right-content">
     <% @dogs.each do |dog| %>
-     <%# <% if dog.dog_record.blank? %> 
+     <% if dog.dog_record.blank? %>
      <div class="dog-info">
        <%= link_to dog_path(dog.id),class:"show-link" do %>
         <%= image_tag dog.image, class:"dog-image" %>
@@ -60,7 +60,7 @@
         </div>
         <% end %>
      </div>
-     <%# <% end %> 
+     <% end %>
     <% end %>
    </div>
    <%# /投稿内容の表示 %>
