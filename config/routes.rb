@@ -13,6 +13,6 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
-    resources :dog_records, only:[:index, :create]
+    resources :cat_records, only:[:index, :create]
   end
 end
