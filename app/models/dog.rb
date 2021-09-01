@@ -1,5 +1,6 @@
 class Dog < ApplicationRecord
     belongs_to :user
+    has_one :dog_record
     has_one_attached :image
 
     extend ActiveHash::Associations::ActiveRecordExtensions
