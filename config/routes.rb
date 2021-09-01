@@ -13,5 +13,6 @@ Rails.application.routes.draw do
     collection do
       get 'search'
     end
+    resources :cat_records, only:[:index, :create]
   end
 end
