@@ -20,7 +20,7 @@
        <% end %>
 
        <%# <% if current_user.id == @dog.user.id && @dog.dog_record.blank? %>
-        <li class="show-btn-decide"><%= link_to "里親が決定した", "#", class:"decide"%></li>
+        <li class="show-btn-decide"><%= link_to "里親が決定した", dog_dog_records_path(@dog.id), class:"decide"%></li>
         <li class="show-btn"><%= link_to "編集する", edit_dog_path(@dog.id), class:"edit"%></li>
         <li class="show-btn"><%= link_to "削除する", dog_path(@dog.id), method: :delete, class:"delete"%></li>
        <%# <% end %> 

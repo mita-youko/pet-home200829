@@ -1,0 +1,54 @@
+.record-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.record-contents{
+    width: 100%;
+    height: 70%;
+    padding: 9vh 30vw;
+    background-color: #ffffff;
+}
+
+.record-info{
+    text-align: center;
+}
+
+.record-font{
+    font-weight: 450;
+    text-align: left;
+    color: #666059;
+}
+
+.record-text{
+    width: 100%;
+    border: solid 1px silver;
+}
+
+.check{
+    font-weight: 500;
+    margin-top: 20px;
+    color: #666059;
+}
+
+.attention{
+    font-weight: 600px;
+    margin-top: 10px;
+    color: #db7c00;
+}
+
+.record-btn{
+    margin-top: 30px;
+}
+
+.contract-btn{
+    width: 130px;
+    margin-top: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #666059;
+    color: #ffffff;
+}
+
