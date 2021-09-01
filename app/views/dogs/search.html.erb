@@ -47,7 +47,7 @@
    <% if @results.length !=0 %>
 
     <% @results.each do |result| %>
-     <%# <% if result.dog_record.blank? %> 
+     <% if result.dog_record.blank? %>
      <div class="dog-info">
        <%= link_to dog_path(result.id),class:"show-link" do %>
         <%= image_tag result.image, class:"dog-image" %>
@@ -63,7 +63,7 @@
         </div>
         <% end %>
      </div>
-     <%# <% end %> 
+     <% end %> 
     <% end %>
    <% else %>
      <h3>検索条件にマッチする動物がいません。</h3>
