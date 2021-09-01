@@ -1,0 +1,3 @@
+class CatRecordsController < ApplicationController
+    
+end
