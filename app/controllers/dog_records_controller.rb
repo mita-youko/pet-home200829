@@ -1,6 +1,6 @@
 class DogRecordsController < ApplicationController
     before_action :authenticate_user!
-    before_action :set_dog, only: [:index]
+    before_action :set_dog, only: [:index, :create]
 
     def index
         @dog_record = DogRecord.new
