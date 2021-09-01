@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_29_195854) do
+ActiveRecord::Schema.define(version: 2021_09_01_135116) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -44,6 +44,17 @@ ActiveRecord::Schema.define(version: 2021_08_29_195854) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_cats_on_user_id"
+  end
+
+  create_table "dog_records", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "new_parent_name", null: false
+    t.string "phone_number", null: false
+    t.string "parent_name", null: false
+    t.boolean "checkbox", null: false
+    t.bigint "dog_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["dog_id"], name: "index_dog_records_on_dog_id"
   end
 
   create_table "dogs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -84,5 +95,6 @@ ActiveRecord::Schema.define(version: 2021_08_29_195854) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "cats", "users"
+  add_foreign_key "dog_records", "dogs"
   add_foreign_key "dogs", "users"
 end
