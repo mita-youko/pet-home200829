@@ -4,4 +4,7 @@ class TopsController < ApplicationController
 
     def staff
     end
+
+    def cando
+    end
 end
