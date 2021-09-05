@@ -1,0 +1,61 @@
+.staff-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.staff-contents{
+    height: 90vh;
+    padding: 7vh 13vw;
+    background-color: #ffffff;
+    border: solid 3px silver;
+}
+
+.interview1{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 60px;
+    padding: 1px;
+    background: linear-gradient(to bottom right, silver, powderblue);
+    display: flex;
+}
+
+.interview-pic1{
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+    background-color: white;
+    background-image: image-url('man.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.comment-box{
+    width: 80%;  
+}
+
+.comment-title{
+    margin-bottom: 2px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+.interview2{
+    width: 100%;
+    height: 230px;
+    padding: 1px;
+    background: linear-gradient(70deg, thistle, powderblue);
+    display: flex;
+}
+
+.interview-pic2{
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+    background-color: white;
+    background-image: image-url('woman.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
