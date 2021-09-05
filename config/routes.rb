@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'tops#index'
 
+  resources :tops, only:[:index] do
+    collection do
+      get 'staff'
+    end
+  end
+
   resources :dogs do
     collection do
       get 'search'
