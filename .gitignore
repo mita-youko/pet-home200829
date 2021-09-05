@@ -30,3 +30,6 @@
 yarn-debug.log*
 .yarn-integrity
 .Ds_Store
+config/storage.yml
+config/environments/production.rb
+config/environments/development.rb
