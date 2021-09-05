@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :tops, only:[:index] do
     collection do
       get 'staff'
+      get 'cando'
     end
   end
 
