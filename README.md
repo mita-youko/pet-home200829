@@ -20,23 +20,23 @@ https://pet-home200829.herokuapp.com/
 # DEMO
 
 ### トップページ
-![top](https://gyazo.com/76f7f925e289afe0f45a4143b71c988f/raw)
+![top](https://gyazo.com/b871cbcbdf2eb3856b7ec89dc7240bab/raw)
 
 ### 新規登録画面
 ![user](https://gyazo.com/901bfe1518133eecf1e5d8d858805c15/raw)
 
 ### 犬一覧ページ（検索結果ページ）
-<img src="resource/dogs.gif" width="500">
+![dogs](https://gyazo.com/c37e94270c7459eda87925132fe51ea5/raw)
 
 ### 詳細ページ
-<img src="resource/show.gif" width="500">
+![show](https://gyazo.com/de2d806f8603b2b53fb376ead4a2512c/raw)
 
 ### 編集ページ
-<img src="resource/edit.gif" width="500">
+![edit](https://gyazo.com/650f5eb62679a62fb13de7eb31bcacb9/raw)
 
 ### 里親決定済ページ
-<img src="resource/decide.gif" width="500">
-<img src="resource/decided.gif" width="500">
+![decide](https://gyazo.com/3d7e052fc5fa5b50775464415957e864/raw)
+![decided](https://gyazo.com/2280728b9340543e62e2d09e1bd0babb/raw)
 
 # 工夫したポイント
 - ビューのレイアウト:
