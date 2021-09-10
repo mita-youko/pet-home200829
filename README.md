@@ -20,34 +20,32 @@ https://pet-home200829.herokuapp.com/
 # DEMO
 
 ### トップページ
-- データが大きすぎるせいか、READMEに載らないので一時的にURLを貼っています。
-https://gyazo.com/b871cbcbdf2eb3856b7ec89dc7240bab
+<img src="resource/top.gif" width="500">
 
 ### 新規登録画面
-![user](https://gyazo.com/7d260b5a4b2dcefc4b1e60ee744ad33e/raw)
+<img src="resource/user.gif" width="500">
 
 ### 犬一覧ページ（検索結果ページ）
-![dogs](https://gyazo.com/c37e94270c7459eda87925132fe51ea5/raw)
-
+<img src="resource/dogs.gif" width="500">
 
 ### 詳細ページ
-![detail](https://gyazo.com/de2d806f8603b2b53fb376ead4a2512c/raw)
+<img src="resource/show.gif" width="500">
 
 ### 編集ページ
-![edit](https://gyazo.com/650f5eb62679a62fb13de7eb31bcacb9/raw)
+<img src="resource/edit.gif" width="500">
 
 ### 里親決定済ページ
-![decide](https://gyazo.com/3d7e052fc5fa5b50775464415957e864/raw)
-![decided](https://gyazo.com/2280728b9340543e62e2d09e1bd0babb/raw)
+<img src="resource/decide.gif" width="500">
+<img src="resource/decided.gif" width="500">
 
 # 工夫したポイント
-- ビューのレイアウト
+- ビューのレイアウト:
 主に学習したのはバックエンドですが、見た目の印象も重視したかったので時間を費やして作成しました。
-- 検索機能
+- 検索機能:
 複数の投稿から利用者に合うペットを見つけやすくなるように検索機能をつけました。
-- 一覧から削除される機能
+- 一覧から削除される機能:
 既に里親が決まった動物が一覧ページに反映されないようにしました。
-- 里親決定後の詳細画面
+- 里親決定後の詳細画面:
 里親決定が完了したことが分かりやすいように工夫しました。
 
 # 使用技術
