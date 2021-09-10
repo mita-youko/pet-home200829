@@ -23,7 +23,7 @@ https://pet-home200829.herokuapp.com/
 ![top](https://gyazo.com/76f7f925e289afe0f45a4143b71c988f/raw)
 
 ### 新規登録画面
-<img src="resource/user.gif" width="500">
+![user](https://gyazo.com/901bfe1518133eecf1e5d8d858805c15/raw)
 
 ### 犬一覧ページ（検索結果ページ）
 <img src="resource/dogs.gif" width="500">
