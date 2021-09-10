@@ -20,7 +20,7 @@ https://pet-home200829.herokuapp.com/
 # DEMO
 
 ### トップページ
-<img src="resource/top.gif" width="500">
+![demo](resource/top.gif)
 
 ### 新規登録画面
 <img src="resource/user.gif" width="500">
